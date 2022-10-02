@@ -170,15 +170,16 @@ ul {
 .main-nav,
 .main-nav:visited {
     color: var(--brand-color);
+    position: relative;
 }
 
-.main-hover {
+.main-nav::after {
     position: absolute;
-   
+   content: "";
     height: 4px;
     left: 0;
     right: 0;
-    bottom: -32px;
+    bottom: -33px;
 
     background: var(--brand-color);
     border-radius: 2px;
